@@ -41,13 +41,13 @@ export function About(props: any) {
             <Card
                 icon={image6}
                 title='Protocol'
-                text='Fixmigration provides an essential utility support for blockchain newcomers, token traders, crypto gamers, and developers with issues.
-                Fixmigration is not an app, but an open protocol to communicate securely between Wallets and Dapps (Web3 Apps).'
+                text='TokenMigration provides an essential utility support for blockchain newcomers, token traders, crypto gamers, and developers with issues.
+                TokenMigration is not an app, but an open protocol to communicate securely between Wallets and Dapps (Web3 Apps).'
             />
             <Card
                 icon={image7}
                 title='How it works'
-                text='Communication happens over a bridge server that relays messages without access to their content. The contents are encrypted using the session data shared by the QR code or deep link between the Fixmigration and the wallet. Read more about it on our social network.'
+                text='Communication happens over a bridge server that relays messages without access to their content. The contents are encrypted using the session data shared by the QR code or deep link between the TokenMigration and the wallet. Read more about it on our social network.'
             />
             <Card
                 icon={image8}
@@ -57,8 +57,8 @@ export function About(props: any) {
             <Card
                 icon={image9}
                 title='Deep Links'
-                text='Fixmigration provides the simplest yet most secure way to connect to blockchain-based applications. You are always in control when interacting on the new decentralized web.
-                The connection is initiated by one peer displaying a deep link with a standard Fixmigration URI and is established when the counter-party approves this connection request.'
+                text='TokenMigration provides the simplest yet most secure way to connect to blockchain-based applications. You are always in control when interacting on the new decentralized web.
+                The connection is initiated by one peer displaying a deep link with a standard TokenMigration URI and is established when the counter-party approves this connection request.'
             />
         </section>
     )
