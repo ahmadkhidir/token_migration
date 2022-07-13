@@ -1,0 +1,44 @@
+@use 'src/App' as app;
+
+.header {
+    border-bottom: 1px solid app.$white;
+    > .animation {
+        height: 70px;
+        background-color: app.$bgcolor;
+    }
+
+    > .navs {
+        display: flex;
+        flex-flow: row nowrap;
+        min-height: 50px;
+
+        > .logo {
+            width: 120px;
+            background-color: app.$bgcolor-l;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+
+            > h1 {
+                font-size: 14px;
+                font-family: Helvetica, Aria, sans-serif;
+            }
+            > p {
+                font-size: 12px;
+                font-family: Helvetica, Aria, sans-serif;
+                line-height: 1.5;
+                font-weight: bold;
+            }
+        }
+
+        > .carousel {
+            max-width: 100%;
+            overflow: hidden;
+            flex: 1;
+            background-color: app.$white;
+        }
+    }
+}

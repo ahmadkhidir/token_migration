@@ -1,0 +1,99 @@
+.wallet_products {
+    padding: 30px;
+
+    > .items {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 20px;
+
+        > .item {
+            text-decoration: none;
+            padding: 15px;
+            background-color: #1e1e68;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            
+            > img {
+                height: 55px;
+            }
+
+            > label {
+                margin-top: 10px;
+                font-size: 14px;
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+
+    > .dots {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        list-style: none;
+        margin: 30px 30px 0;
+
+        > .dot {
+            margin: 5px 5px;
+            background-color: #1e1e68;
+            padding: 3px 10px;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+
+            &[title='current'] {
+                background-color: black;
+            }
+        }
+    }
+
+    > .search_bar {
+        height: 40px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        margin-bottom: 30px;
+
+        > input {
+            flex: 1;
+            border: 1px solid #1e1e68;
+            border-radius: 5px;
+            max-width: 200px;
+            outline: 0;
+            padding: 0 10px;
+            font-size: 15px;
+            font-weight: 500;
+
+            &:focus {
+                border-width: 2px;
+            }
+        }
+
+        > button {
+            background-color: #1e1e68;
+            height: 100%;
+            border: 0;
+            padding: 8px;
+            margin-left: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+
+            > img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 420px) {
+    .wallet_products {
+        > .search_bar {
+            justify-content: center;
+        }
+    }
+}

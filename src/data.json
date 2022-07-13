@@ -1,0 +1,101 @@
+[
+    {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "rank": "1",
+        "price": "19104.56662506226",
+        "percent_change": "-4.60088649",
+        "volume": "23427162058.582157",
+        "market_cap": "364541877599.463",
+        "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
+        "url": "https://bitcoin.org/"
+    },
+    {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "rank": "2",
+        "price": "1031.5360481333214",
+        "percent_change": "-6.31119359",
+        "volume": "16153314254.901588",
+        "market_cap": "125182789768.66586",
+        "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png",
+        "url": "https://www.ethereum.org/"
+    },
+    {
+        "name": "Tether",
+        "symbol": "USDT",
+        "rank": "3",
+        "price": "0.998906025453941",
+        "percent_change": "-0.01040587",
+        "volume": "46574110630.86745",
+        "market_cap": "66342446447.10018",
+        "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png",
+        "url": "https://tether.to"
+    },
+    {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "rank": "1",
+        "price": "19104.56662506226",
+        "percent_change": "-4.60088649",
+        "volume": "23427162058.582157",
+        "market_cap": "364541877599.463",
+        "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
+        "url": "https://bitcoin.org/"
+    },
+    {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "rank": "2",
+        "price": "1031.5360481333214",
+        "percent_change": "-6.31119359",
+        "volume": "16153314254.901588",
+        "market_cap": "125182789768.66586",
+        "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png",
+        "url": "https://www.ethereum.org/"
+    },
+    {
+        "name": "Tether",
+        "symbol": "USDT",
+        "rank": "3",
+        "price": "0.998906025453941",
+        "percent_change": "-0.01040587",
+        "volume": "46574110630.86745",
+        "market_cap": "66342446447.10018",
+        "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png",
+        "url": "https://tether.to"
+    },
+    {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "rank": "1",
+        "price": "19104.56662506226",
+        "percent_change": "-4.60088649",
+        "volume": "23427162058.582157",
+        "market_cap": "364541877599.463",
+        "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
+        "url": "https://bitcoin.org/"
+    },
+    {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "rank": "2",
+        "price": "1031.5360481333214",
+        "percent_change": "-6.31119359",
+        "volume": "16153314254.901588",
+        "market_cap": "125182789768.66586",
+        "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png",
+        "url": "https://www.ethereum.org/"
+    },
+    {
+        "name": "Tether",
+        "symbol": "USDT",
+        "rank": "3",
+        "price": "0.998906025453941",
+        "percent_change": "-0.01040587",
+        "volume": "46574110630.86745",
+        "market_cap": "66342446447.10018",
+        "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png",
+        "url": "https://tether.to"
+    }
+]

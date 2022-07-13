@@ -1,0 +1,32 @@
+.card {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 50px;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+    margin-bottom: 20px;
+    color: #202020;
+    font-family: Helvetica, Arial, sans-serif;
+
+    > img {
+        width: 55px;
+    }
+
+    > h1 {
+        font-size: 25px;
+        margin: 20px 0 10px;
+    }
+
+    > p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 420px) {
+    .card {
+        padding: 30px;
+    }
+}
