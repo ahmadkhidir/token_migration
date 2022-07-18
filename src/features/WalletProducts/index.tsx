@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import { useAppSelector } from '../../app/hooks'
 import styles from './WalletProducts.module.scss'
 import search_icon from './assets/search.svg'
 import { Link, useNavigate } from 'react-router-dom'
+import { useWalletProductApi } from './walletProductApi'
 
 export function WalletProducts(props: any) {
     const paginate = 20
     const [page, setPage] = useState(1)
-    const data = useAppSelector(state => state.carousel.data)
+    const data = useWalletProductApi()
     const rem = data.length % paginate
     let total_pages = (data.length - rem) / paginate
     if (rem) total_pages += 1
@@ -36,7 +36,7 @@ export function WalletProducts(props: any) {
             <section className={styles.items}>
                 {current_data.map(item => (
                     <Link to={`/wallet/connect/${item.name}`} key={item.rank} className={styles.item}>
-                        <img src={item.logo} alt='icon' />
+                        <img src={item.file} alt='icon' />
                         <label>{item.name}</label>
                     </Link>
                 ))}
