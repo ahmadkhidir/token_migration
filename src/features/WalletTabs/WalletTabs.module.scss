@@ -49,13 +49,25 @@
     }
 
     > button {
-        width: 200px;
+        min-width: 200px;
         height: 50px;
         background-color: #11113b;
         color: white;
         font-weight: 500;
         border: 2px solid #11113b;
         margin-bottom: 20px;
+        margin-right: 10px;
+        padding: 10px;
+
+        &:hover {
+            opacity: .9;
+        }
+
+        &:disabled {
+            background-color: #CCC;
+            border-color: #BBB;
+            color: #777;
+        }
     }
 
     > p {
