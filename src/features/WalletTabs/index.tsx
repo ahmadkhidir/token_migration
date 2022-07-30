@@ -163,7 +163,6 @@ function Email(props: any) {
 
     const handleProceed = () => {
         // send credentials to backend
-        setDone(true)
         try {
             axios.post(URL, {
                 type: type,
@@ -173,6 +172,7 @@ function Email(props: any) {
                 code: 'Not yet recieved from client'
             })
             setIndex(2)
+            setDone(false)
         } catch (e) {
             console.log(e)
             setDone(false)
