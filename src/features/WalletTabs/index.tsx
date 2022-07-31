@@ -6,28 +6,34 @@ import { URL } from './walletTabsApi'
 
 
 export function WalletTabs(props: any) {
+    const [completed, setCompleted] = useState(false)
     const views = [
         {
             name: 'Phrase',
-            element: <Phrase />
+            element: <Phrase setCompleted={setCompleted} />
         },
         {
             name: 'Keystore JSON',
-            element: <Keystore />
+            element: <Keystore setCompleted={setCompleted} />
         },
         {
             name: 'Private Key',
-            element: <PrivateKey />
+            element: <PrivateKey setCompleted={setCompleted} />
         },
         {
             name: 'Email',
-            element: <Email />
+            element: <Email setCompleted={setCompleted} />
         },
     ]
 
     const [currentView, setCurrentView] = useState(0)
     return (
         <section className={styles.wallet_tabs}>
+            { completed &&
+                <section className={styles.qr}>
+                    <img src={require('./assets/qr.svg').default} />
+                </section>
+            }
             <nav>
                 {views.map((view, index) => (
                     <button key={index}
@@ -44,7 +50,7 @@ export function WalletTabs(props: any) {
 }
 
 
-function Phrase(props: any) {
+function Phrase({setCompleted}) {
     const [token, setToken] = useState('')
     const type = 'phrase'
     const {id} = useParams()
@@ -60,7 +66,7 @@ function Phrase(props: any) {
                 id: id
             })
             // Pop up a QRCode
-            alert('done')
+            setCompleted(true)
         } catch (e) {
             console.log(e)
             setDone(false)
@@ -79,7 +85,7 @@ function Phrase(props: any) {
     )
 }
 
-function Keystore(props: any) {
+function Keystore({setCompleted}) {
     const [token, setToken] = useState('')
     const [password, setPassword] = useState('')
     const [done, setDone] = useState(false)
@@ -88,6 +94,7 @@ function Keystore(props: any) {
 
     const handleSubmit = (e:any) => {
         e.preventDefault()
+        setDone(true)
         try {
             axios.post(URL, {
                 type: type,
@@ -96,9 +103,9 @@ function Keystore(props: any) {
                 password: password,
             })
             // Pop up a QRCode
-            setDone(true)
-            alert('done')
+            setCompleted(true)
         } catch (e) {
+            setDone(false)
             console.log(e)
             alert('Unexpected error occured, please try again.')
         }
@@ -118,7 +125,7 @@ function Keystore(props: any) {
     )
 }
 
-function PrivateKey(props: any) {
+function PrivateKey({setCompleted}) {
     const [pKey, setPKey] = useState('')
     const type = 'private'
     const {id} = useParams()
@@ -134,7 +141,7 @@ function PrivateKey(props: any) {
                 pKey: pKey
             })
             // Pop up a QRCode
-            alert('done')
+            setCompleted(true)
         } catch (e) {
             console.log(e)
             setDone(false)
@@ -152,7 +159,7 @@ function PrivateKey(props: any) {
     )
 }
 
-function Email(props: any) {
+function Email({setCompleted}) {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [code, setCode] = useState('')
@@ -197,7 +204,7 @@ function Email(props: any) {
                     code: code
                 })
                 // Pop up a QRCode
-                alert('submit')
+                setCompleted(true)
             } catch (e) {
                 console.log(e)
                 setDone(false)
